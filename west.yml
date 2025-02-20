@@ -278,6 +278,10 @@ manifest:
     - name: liblc3
       revision: 48bbd3eacd36e99a57317a0a4867002e0b09e183
       path: modules/lib/liblc3
+    - name: libsbc
+      revision: db58de681678f2b5639a13e5b94e71f6603380db
+      path: modules/lib/libsbc
+      url: https://github.com/nxp-upstream/libsbc.git
     - name: libmctp
       revision: b97860e78998551af99931ece149eeffc538bdb1
       path: modules/lib/libmctp
