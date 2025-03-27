@@ -46,6 +46,9 @@ enum virtual_interface_caps {
 	/** Virtual Ethernet bridge interface. */
 	VIRTUAL_INTERFACE_BRIDGE = BIT(3),
 
+	/** VPN interface */
+	VIRTUAL_INTERFACE_VPN = BIT(4),
+
 /** @cond INTERNAL_HIDDEN */
 	/* Marker for capabilities - must be at the end of the enum.
 	 * It is here because the capability list cannot be empty.
@@ -160,7 +163,7 @@ struct virtual_interface_context {
 	bool is_init;
 
 	/** Link address for this network interface */
-	struct net_linkaddr_storage lladdr;
+	struct net_linkaddr lladdr;
 
 	/** User friendly name of this L2 layer. */
 	char name[VIRTUAL_MAX_NAME_LEN];
